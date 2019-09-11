@@ -31,5 +31,4 @@ function totalRevenue(drivers) {
   drivers.reduce(function (agg, el, i, arr) {
     return agg += el.revenue;
   }, 0)
-  return agg;
 }

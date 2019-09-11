@@ -28,8 +28,8 @@ function driversByName(drivers) {
 }
 
 function totalRevenue(drivers) {
-  const reduceRev = 
-  drivers.reduce(function (agg, el, i, arr) {
-    return agg += el.revenue;
-  }, 0)
+  const reduceRev = function (agg, el, i, arr) {
+     return agg += el.revenue;
+  }
+  drivers.reduce(reduceRev, 0)
 }
